@@ -2,12 +2,17 @@
 
 ################################################################################
 # AUTOR: Victor Dias Marques                                                   #
-# CONTATO: victordmarx@pm.me                                                   #
+# CONTATO: victordmarx@pm.me                                                   #    
 # DATA: 27/09/2025                                                             #
 # DESCRIÇÃO: Gera um arquivo com o cabeçalho pronto                            #
 ################################################################################
-# VERSÃO: v1.0.0                                                               #
+# VERSÃO: v1.1.0                                                               #
 # HISTÓRICO:                                                                   #
+#   1.1.0: 22/10/2025                                                          #
+#     CORREÇÃO                                                                 #
+#        - O # estava ficando desalinhado, feito o ajuste.                     #
+#     MELHORIA                                                                 #
+#        - Agora é exibida uma mensagem informando que o arquivo foi criado    #
 #   1.0.0: 27/09/2025 - Versão inicial                                         #
 ################################################################################
 
@@ -35,7 +40,8 @@ else
     echo "################################################################################" >> "$2"
     echo "# VERSÃO: v1.0.0                                                               #" >> "$2"
     echo "# HISTÓRICO:                                                                   #" >> "$2"
-    echo "#   1.0.0 - $(date +%d/%m/%Y) - Versão inicial                                          #" >> "$2"
+    echo "#   1.0.0 - $(date +%d/%m/%Y) - Versão inicial                                        #" >> "$2"
     echo "################################################################################" >> "$2"
 fi
-    
+
+echo "Arquivo $1 gerado em $2"
